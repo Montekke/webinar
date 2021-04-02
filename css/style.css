@@ -186,6 +186,7 @@ input::placeholder {
 }
 .cooperation-form input {
     margin-bottom: 30px;
+    padding-left: 50px;
 }
 .accept {
     margin-top: 27px;
@@ -332,4 +333,98 @@ p {
 }
 .core .d-flex {
     margin-bottom: 35px;
+}
+.line {
+    left: 422px;
+    bottom: 40px;
+}
+.header-tnx h1 {
+    font-size: 68px;
+    line-height: 76px;
+}
+.header-tnx h1 span {
+    font-weight: 700;
+}
+.header-tnx p {
+    margin-top: 40px;
+    font-size: 34px;
+    line-height: 46px;
+    margin-bottom: 25px;
+}
+.b1 p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0px;
+}
+.b1 img {
+    margin-right: 21px;
+}
+.block3 {
+    margin-top: 40px;
+    width: 890px;
+    height: 166px;
+    background-color: #ffffff;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.04);
+    position: relative;
+}
+.block3::before {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    width: 880px;
+    height: 156px;
+    border: 1px solid #000000;
+    opacity: 0.04;
+    top: 5px;
+    right: 5px;
+}
+.tg {
+    width: 260px;
+    height: 86px;
+    box-shadow: 0 25px 50px rgba(36, 167, 247, 0.15), inset 0 3px 10px rgba(255, 255, 255, 0.4), inset 0 0 20px 1px rgba(255, 255, 255, 0.15);
+    border-radius: 43px;
+    background-color: #24a7f7;
+}
+.vk {
+    width: 260px;
+    height: 86px;
+    box-shadow: 0 25px 50px rgba(39, 135, 245, 0.15), inset 0 3px 10px rgba(255, 255, 255, 0.2), inset 0 0 20px 1px rgba(255, 255, 255, 0.15);
+    border-radius: 43px;
+    background-color: #3f76b2;
+}
+.face {
+    width: 260px;
+    height: 86px;
+    box-shadow: 0 25px 50px rgba(36, 167, 247, 0.15), inset 0 3px 10px rgba(255, 255, 255, 0.2), inset 0 0 20px 1px rgba(255, 255, 255, 0.15);
+    border-radius: 43px;
+    background-color: #4a629f;
+}
+.block3 a {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-right: 15px;
+}
+.block3 a:last-child {
+    margin-right: 0;
+}
+.block3 img {
+    margin-right: 15px;
+}
+.core2 {
+    z-index: 3;
+}
+.header-tnx {
+    padding-bottom: 110px;
+}
+.tnx-man {
+    top: 8px;
+}
+.tnx-name {
+    bottom: -25px;
+    left: 20px;
+}
+.liine {
+    right: 284px;
+    bottom: -34px;
 }
