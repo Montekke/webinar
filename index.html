@@ -20,37 +20,38 @@
         <div class="container">
             <div class="d-flex top-header">
                 <div class="d-flex">
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <div>7</div>
+                    <div class="d-flex flex-column align-items-center justify-content-center data-h">
+                        <div class="cifra">7</div>
                         <div>апреля</div>
                     </div>
-                    <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/line.png" alt="">
+                    <div class="d-flex flex-column align-items-center justify-content-end time-h">
                         <img src="img/clock.png" alt="">
                         <div>19:00 по МСК</div>
                     </div>
                 </div>
-                <div class="position-relative">
+                <div class="position-relative flex-column d-flex align-items-center justify-content-center">
                     <p>Бесплатный <br>
                         вебинар</p>
                     <img class="position-absolute" src="img/free.png" alt="">
                 </div>
             </div>
-            <div class="d-flex">
+            <div class="d-flex header-bottom">
                 <div>
                     <h1><span>Как собственнику бизнеса</span><br>
-                        удвоить личный доход<br>
+                        удвоить <img src="img/ruble.png" alt=""> личный доход<br>
                         за следующие 4 месяца,</h1>
                     <p>автоматизировав найм, обучение<br>
                             и масштабирование отдела продаж?</p>
-                    <button>Зарегистрироваться на вебинар<br>
+                    <button class="button">Зарегистрироваться на вебинар<br>
                             БЕСПЛАТНО <span>+ получить подарок</span></button>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex position-relative">
                     <div>
-                        <img src="img/man.png" alt="">
+                        <img class="position-absolute man" src="img/man.png" alt="">
                     </div>
                     <div>
-                        <img src="img/speaker.png" alt="">
+                        <img class="position-absolute name" src="img/speaker.png" alt="">
                     </div>
                 </div>
             </div>
@@ -59,9 +60,9 @@
     <section class="you_now">
         <div class="container">
             <h2>За 2 часа на мастер-классе <span>вы узнаете, как:</span></h2>
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <div class="d-flex">
-                    <div class="d-flex">
+            <div class="d-flex flex-column">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex div1">
                         <div>
                             <img src="img/icon1.png" alt="">
                         </div>
@@ -84,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex justify-content-between">
                     <div class="d-flex">
                         <div>
                             <img src="img/icon3.png" alt="">
@@ -96,7 +97,7 @@
                                 с руководящего звена</p>
                         </div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex stul">
                         <div>
                             <img src="img/icon4.png" alt="">
                         </div>
@@ -113,41 +114,43 @@
     </section>
     <section class="feedback">
         <div class="container">
-            <div class="left">
-                <div>
-                    <h2>Заполните форму ниже,</h2>
-                    <p>чтобы зарегистрироваться<br>
-                        на вебинар БЕСПЛАТНО</p>
-                    <p>+ получить план масштабирования<br>
-                        и автоматизации отдела продаж в подарок!</p>
-                </div>
-                <div class="cooperation-form">
-                    <form class="needs-validation main-form" novalidate="" method="POST" action="#" enctype="multipart/form-data" name="addcom" id="addcom" onsubmit="return false">
-                        <div class="form-label-group">
-                            <label for="phone">Введите телефон для получения<br>
-                                СМС о начале вебинара</label>
-                            <input id="phone" type="text" class="form-control" name="phone" placeholder="+7 (___) ___-__-_" required="">
-                        <div class="form-label-group">
-                            <label for="email">Введите почту, чтобы получить<br>
-                                план масштабирования ОП в подарок</label>
-                            <input id="email" type="email" class="form-control" name="email" placeholder="mail@mail.ru" required="">       
+            <div class="d-flex justify-content-end">
+                <div class="right-form position-relative">
+                    <div class="block">
+                        <div class="container-form">
+                            <div>
+                                <h2>Заполните форму ниже,</h2>
+                                <p>чтобы зарегистрироваться<br>
+                                    на вебинар <span>БЕСПЛАТНО</span></p>
+                                <p><span>+ получить план масштабирования<br>
+                                    и автоматизации отдела продаж в подарок!</span></p>
+                            </div>
+                            <div class="cooperation-form">
+                                <form class="needs-validation main-form" novalidate="" method="POST" action="#" enctype="multipart/form-data" name="addcom" id="addcom" onsubmit="return false">
+                                    <div class="form-label-group">
+                                        <label for="phone">Введите телефон для получения<br>СМС о начале вебинара</label>
+                                        <input id="phone" type="tel" class="form-control" name="phone" placeholder="+7 (___) ___-__-_" required="">
+                                    <div class="form-label-group">
+                                        <label for="email">Введите почту, чтобы получить<br>план масштабирования ОП в подарок</label>
+                                        <input id="email" type="email" class="form-control" name="email" placeholder="mail@mail.ru" required="">       
+                                    </div>
+                                    <button class="form-button button">Зарегистрироваться на вебинар<br>
+                                        БЕСПЛАТНО <span>+ получить подарок</span></button>
+                                    <div class="accept d-flex justify-content-center align-items-center">
+                                        <input type="checkbox" id="linkDa"/><label for="linkDa">Я принимаю <a href="#">условия передачи информации</a></label>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <button class="form-button">Зарегистрироваться на вебинар<br>
-                            БЕСПЛАТНО <span>+ получить подарок</span></button>
-                        <div>
-                            <input type="checkbox" id="linkDa"/><label for="linkDa">Я принимаю <span>условия передачи информации</span></label>
-                        </div>
-                        
-                     </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="for_you">
         <div class="container">
-            <h2>Вебинар для вас, если:</h2>
-            <div class="d-flex">
-                
+            <h2><span>Вебинар для вас, если:</span></h2>
+            <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex flex-column">
                     <div>
                         <img src="img/icon_1.png" alt="">
@@ -159,7 +162,7 @@
                             дается огромным трудом</p>
                     </div>
                 </div>
-                    <div class="d-flex flex-column">
+                <div class="d-flex flex-column block2">
                         <div>
                             <img src="img/icon_2.png" alt="">
                         </div>
@@ -170,8 +173,8 @@
                                 его в короткий срок без больших<br>
                                 временных затрат</p>
                         </div>
-                    </div>
-                    <div class="d-flex flex-column">
+                </div>
+                <div class="d-flex flex-column">
                         <div>
                             <img src="img/icon_3.png" alt="">
                         </div>
@@ -181,7 +184,7 @@
                             <p>и необходимо автоматизировать<br>
                                 найм и адаптацию сотрудников</p>
                         </div>
-                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -220,8 +223,7 @@
                     <div>
                         <img src="img/img4.png" alt="">
                     </div>
-                    <h4>сможете быстро<br>
-                        масштабировать отдел продаж</h4>
+                    <h4>сможете быстро<br>масштабировать отдел продаж</h4>
                     <p>благодаря возможности за короткий<br>
                         срок автоматизированно обучать<br>
                         и вводить в должность ЛЮБОЕ<br>
@@ -238,17 +240,20 @@
                         продукта/услуги компании</p>
                 </div>
             </div>
-            <button class="">Зарегистрироваться на вебинар<br>
-                БЕСПЛАТНО <span>+ получить подарок</span></button>
+            <div class="d-flex justify-content-center align-items-center">
+                <button class="button">Зарегистрироваться на вебинар<br>
+                    БЕСПЛАТНО <span>+ получить подарок</span></button>
+            </div>
+            
         </div>
     </section>
     <section class="result">
         <div class="container">
-            <h2>Посмотрите, какие результаты<br>
-                уже получили компании</h2>
-            <p> после внедрения всех знаний</p>
+            <h2>Посмотрите, какие <span>результаты<br>
+                уже получили компании</span></h2>
+            <h5>после внедрения всех знаний</h5>
             <div class="row">
-                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center d1">
                     <div>   
                         <img src="img/ecocomplect.png" alt="">
                     </div>
@@ -263,7 +268,11 @@
                     <p><span>Увеличили выручку в 4,5 раза,</span><br>
                         автоматизировав обучение менеджеров<br>
                         и быстро масштабировав отдел продаж</p>
-                    <a href=""><img src="img/play.png" alt="">Смотреть видео-отзыв</a>
+                    <div class="vid1">
+                        <a data-fancybox="gallery" href="#">
+                              <img src="img/play.png" alt=""> Смотреть видео-отзыв
+                        </a>
+                    </div>
                 </div>
                 <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
                     <div>   
@@ -272,41 +281,45 @@
                     <p>Построили систему обучения, с четким<br>
                         разделением функций и <span>полноценным<br>
                         обучением всем продуктам компании</span></p>
-                    <a href=""><img src="img/play.png" alt="">Смотреть видео-отзыв</a>
+                    <div class="vid1">
+                        <a data-fancybox="gallery" href="#">
+                            <img src="img/play.png" alt=""> Смотреть видео-отзыв
+                        </a>
+                    </div>
                 </div>
             </div>
-            <button class="">Зарегистрироваться на вебинар<br>
+            <div class="d-flex justify-content-center align-items-center">
+                <button class="button">Зарегистрироваться на вебинар<br>
                 БЕСПЛАТНО <span>+ получить подарок</span></button>
+            </div>
         </div>
     </section>
     <section class="on_air">
         <div class="container">
-            <h2>Вебинар ведет<br>
-                Александр Мамичев —</h2>
-            <p>Основатель компании по автоматизации <br>
-                    бучения в отделе продаж</p>
-            <div class="d-flex flex-column">
-                <div class="d-flex">
+            <h2>Вебинар ведет<br><span>Александр Мамичев —</span></h2>
+            <h4>Основатель компании по автоматизации <br>бучения в отделе продаж</h4>
+            <div class="d-flex flex-column core">
+                <div class="d-flex align-items-center">
                     <div>
                         <img src="img/img_1.png" alt="">
                     </div>
                     <p>Построил в своей компании автоматизированную<br>
                         систему найма и обучения новых сотрудников</p>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex align-items-center">
                     <div>
                         <img src="img/img_2.png" alt="">
                     </div>
                     <p>Более 12 лет в маркетинге и продажах</p>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex align-items-center">
                     <div>
                         <img src="img/img_3.png" alt="">
                     </div>
                     <p>Автоматизировал обучение менеджеров ОП<br>
                         более чем в 100 компаниях</p>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex align-items-center">
                     <div>
                         <img src="img/img_4.png" alt="">
                     </div>
@@ -318,32 +331,35 @@
     </section>
     <section class="feedback">
         <div class="container">
-            <div class="left">
-                <div>
-                    <h2>Заполните форму ниже,</h2>
-                    <p>чтобы зарегистрироваться<br>
-                        на вебинар БЕСПЛАТНО</p>
-                    <p>+ получить план масштабирования<br>
-                        и автоматизации отдела продаж в подарок!</p>
-                </div>
-                <div class="cooperation-form">
-                    <form class="needs-validation main-form" novalidate="" method="POST" action="#" enctype="multipart/form-data" name="addcom" id="addcom" onsubmit="return false">
-                        <div class="form-label-group">
-                            <label for="phone">Введите телефон для получения<br>
-                                СМС о начале вебинара</label>
-                            <input id="phone" type="text" class="form-control" name="phone" placeholder="+7 (___) ___-__-_" required="">
-                        <div class="form-label-group">
-                            <label for="email">Введите почту, чтобы получить<br>
-                                план масштабирования ОП в подарок</label>
-                            <input id="email" type="email" class="form-control" name="email" placeholder="mail@mail.ru" required="">       
+            <div class="d-flex justify-content-end">
+                <div class="right-form position-relative">
+                    <div class="block">
+                        <div class="container-form">
+                            <div>
+                                <h2>Заполните форму ниже,</h2>
+                                <p>чтобы зарегистрироваться<br>
+                                    на вебинар <span>БЕСПЛАТНО</span></p>
+                                <p><span>+ получить план масштабирования<br>
+                                    и автоматизации отдела продаж в подарок!</span></p>
+                            </div>
+                            <div class="cooperation-form">
+                                <form class="needs-validation main-form" novalidate="" method="POST" action="#" enctype="multipart/form-data" name="addcom" id="addcom" onsubmit="return false">
+                                    <div class="form-label-group">
+                                        <label for="phone">Введите телефон для получения<br>СМС о начале вебинара</label>
+                                        <input id="phone" type="tel" class="form-control" name="phone" placeholder="+7 (___) ___-__-_" required="">
+                                    <div class="form-label-group">
+                                        <label for="email">Введите почту, чтобы получить<br>план масштабирования ОП в подарок</label>
+                                        <input id="email" type="email" class="form-control" name="email" placeholder="mail@mail.ru" required="">       
+                                    </div>
+                                    <button class="form-button button">Зарегистрироваться на вебинар<br>
+                                        БЕСПЛАТНО <span>+ получить подарок</span></button>
+                                    <div class="accept d-flex justify-content-center align-items-center">
+                                        <input type="checkbox" id="linkDa"/><label for="linkDa">Я принимаю <a href="#">условия передачи информации</a></label>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <button class="form-button">Зарегистрироваться на вебинар<br>
-                            БЕСПЛАТНО <span>+ получить подарок</span></button>
-                        <div>
-                            <input type="checkbox" id="linkDa"/><label for="linkDa">Я принимаю <span>условия передачи информации</span></label>
-                        </div>
-                        
-                     </form>
+                    </div>
                 </div>
             </div>
         </div>
