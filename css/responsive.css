@@ -635,7 +635,7 @@
         right: 93px;
     }
     .header-bottom {
-        padding-bottom: 500px;
+        padding-bottom: 480px;
     }
 }
 @media (max-width:425px) {
@@ -646,7 +646,7 @@
         left: auto;
     }
     .name {
-        top: 640px;
+        top: 614px;
         left: auto;
         right: 29px;
     }
