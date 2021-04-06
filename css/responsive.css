@@ -84,6 +84,24 @@
     }
 }
 @media (max-width:992px) {
+    .close {
+        position: absolute;
+        right: -105px;
+        opacity: 1;
+    }
+    .close2 {
+        position: absolute;
+        right: -37px;
+        opacity: 1;
+    }
+    .modal-dialog {
+        max-width: 440px;
+        margin-top: 50px;
+    }
+    .liine {
+        right: 97px;
+        bottom: -34px;
+    }
     .tnx-name {
         bottom: auto;
         left: auto;
@@ -275,6 +293,18 @@
     }
 }
 @media (max-width:767px) {
+    .close {
+        position: absolute;
+        right: -63px;
+        opacity: 1;
+        top: -41px;
+    }
+    .close2 {
+        position: absolute;
+        right: -37px;
+        opacity: 1;
+        top: 0px;
+    }
     .header {
         background-position: 50% 50%;
     }
@@ -333,7 +363,7 @@
         padding-bottom: 70px;
     }
     .on_air {
-        background-image: url(../img/speaker-bg.png);
+         
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;
@@ -371,19 +401,168 @@
     }
     .header-tnx p {
         margin-top: 40px;
-        font-size: 28px;
+        font-size: 30px;
         line-height: 46px;
         margin-bottom: 25px;
         width: 577px;
     }
+    .b1 p {
+        font-size: 22px;
+    }
     .core2 {
         flex-direction: column;
+        top: 16px;
+    }
+    .liine {
+        right: 206px;
+        bottom: -116px;
+        transform: rotate(70deg);
+    }
+    .b1 img {
+        width: 110px;
     }
     .core2 a {
         margin-bottom: 30px;
     }
+    .block3 {
+        margin-top: 40px;
+        width: 350px;
+        height: 390px;
+        background-color: #ffffff;
+        box-shadow: 0 30px 60px rgb(0 0 0 / 4%);
+        position: relative;
+        z-index: 3;
+    }
+    .block3::before {
+        content: "";
+        z-index: 2;
+        position: absolute;
+        width: 340px;
+        height: 380px;
+        border: 1px solid #000000;
+        opacity: 0.04;
+        top: 5px;
+        right: 5px;
+    }
+    .block3 a {
+        margin-right: 0;
+    }
+    .face, .tg, .vk {
+        width: 260px;
+    }
+    .tnx-man {
+        top: 1112px;
+        left: auto;
+        right: 205px;
+        width: 500px;
+    }
+    .tnx-name {
+        bottom: auto;
+        left: auto;
+        right: 420px;
+        top: 1638px;
+    }
+}
+@media (max-width:617px) {
+    .modal_m {
+        margin: 0 auto;
+        width: 450px;
+    }
+    .block {
+        width: 450px;
+        box-shadow: 0 30px 60px rgb(0 0 0 / 4%);
+        background-color: #fff;
+        height: 855px;
+        position: relative;
+    }
+    .block::before {
+        content: "";
+        z-index: 2;
+        position: absolute;
+        width: 440px;
+        height: 845px;
+        border: 1px solid #000000;
+        opacity: 0.04;
+        top: 5px;
+        right: 5px;
+    }
+    .modal-content {
+        background: transparent;
+        border: none;
+    }
+    .close {
+        position: absolute;
+        right: -6px;
+        opacity: 1;
+    }
+    .close2 {
+        position: absolute;
+        right: 5px;
+        opacity: 1;
+        top: -41px;
+    }
 }
 @media (max-width:576px) {
+    .hidden-m {
+        display: none;
+    }
+    .visible-m {
+        display: flex !important;
+    }
+    .header {
+        background-position: center;
+        background-image: url(../img/m_fon.png);
+    }
+    .modal_m {
+        margin: 0 auto;
+        width: 376px;
+    }
+    .modal-body .container-form h2 {
+        margin-top: 16px;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .modal-body input {
+        width: 345px;
+        height: 96px;
+        border-radius: 48px;
+        border: 1px solid #10182024;
+    }
+    .modal-content .block::before {
+        content: none;
+        border: none !important;
+    }
+    .modal-body .cooperation-form label {
+        margin-bottom: 16px;
+        margin-left: 25px;
+    }
+    .modal-body .cooperation-form input {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding-left: 50px;
+    }
+    .close {
+        position: absolute;
+        right: 4px;
+        opacity: 1;
+    }
+    .modal-body .accept label {
+        margin: 0;
+        font-size: 14px;
+        color: #b3b3b3;
+        margin-left: 10px;
+        text-transform: none;
+    }
+    .modal-body .accept input {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    .header-tnx {
+        padding-bottom: 670px;
+    }
     .man {
         top: 301px;
         right: 63px;
@@ -552,9 +731,11 @@
     .block22 {
         margin-top: 50px;
     }
-    .block22 img,.block2 img, .block222 img {
-        margin-bottom: 20px;
-    }
+    .block22 img, .block2 img, .block222 img {
+    margin-bottom: 20px;
+    max-width: 130px;
+    margin-right: 0;
+}
     .for_you h3 {
         font-size: 22px;
         line-height: 32px;
@@ -602,15 +783,19 @@
         display: none;
     }
     .on_air h4 {
-        font-size: 24px;
+        font-size: 19px;
         line-height: 33px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+    .on_air .visible-m {
+        margin-bottom: 30px;
     }
     .on_air p br {
         display: none;
     }
     .on_air {
-        background-image: url(../img/speaker-bg.png);
+        background-image: url(../img/m_foni.png);
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;
@@ -618,8 +803,74 @@
         padding-bottom: 15px;
         margin-bottom: 30px;
     }
-    .button_s {
+    .modal-body .button_s {
         margin-left: 20px;
+    }
+    .header-tnx h1 {
+        font-size: 40px;
+        line-height: 66px;
+        width: 410px;
+        margin-top: 70px;
+    }
+    .header-tnx p br {
+        display: none;
+    }
+    .header-tnx p {
+        margin-top: 40px;
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 25px;
+        width: 335px;
+        padding: 0 13px;
+    }
+    .b1 p {
+        font-size: 22px;
+        width: 298px;
+    }
+    .b1 {
+        width: 335px;
+    }
+    .liine {
+        right: 86px;
+        bottom: -92px;
+        transform: rotate(20deg);
+    }
+    .block3 {
+        width: 350px;
+        height: 390px;
+        background-color: #ffffff;
+        box-shadow: 0 30px 60px rgb(0 0 0 / 4%);
+        position: relative;
+        z-index: 3;
+        top: 91px;
+    }
+    .wid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tnx-man {
+        top: 1200px;
+        left: auto;
+        right: -13px;
+        width: 460px;
+    }
+    .tnx-name {
+        bottom: auto;
+        left: auto;
+        right: 84px;
+        top: 1668px;
+    }
+    .vid99 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .modal-dialog {
+        margin: 0 auto;
+        max-width: 375px;
+        margin-top: 50px;
     }
 }
 @media (max-width:491px) {
@@ -639,14 +890,130 @@
     }
 }
 @media (max-width:425px) {
+    .vid99 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 335px;
+    }
+    .hidden-xs {
+        display: none;
+    }
+    .visible-xs {
+        display: block;
+    }
+    .modal-dialog {
+        max-width: 350px;
+        margin-top: -20px;
+    }
+    .modal-content {
+        background: transparent;
+        border: none;
+        top: 30px;
+    }
+    .close {
+        position: absolute;
+        right: 34px;
+        opacity: 1;
+        top: -34px;
+    }
+    .button_s {
+        margin-left: 23px;
+    }
+    .modal-body .button_s {
+        margin-left: 44px;
+    }
+    .close {
+        position: absolute;
+        right: 7px;
+        opacity: 1;
+        top: 7px;
+        z-index: 3;
+    }
+    .modal-body input {
+        width: 300px;
+        height: 80px;
+        border-radius: 48px;
+        border: 1px solid #10182024;
+    }
+    .modal-body .cooperation-form label {
+        margin-bottom: 16px;
+        margin-left: 43px;
+        font-size: 14px;
+    }
+    .modal-body .container-form h2 {
+        margin-top: 14px;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .modal-body .container-form p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .vid1 a {
+        font-size: 12px;
+        color: #ff0000;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .b1 img {
+        margin-right: 0px;
+    }
+    .header-tnx h1 {
+        font-size: 33px;
+        line-height: 55px;
+        width: 335px;
+        margin-top: 70px;
+    }
+    .header-tnx p {
+         padding: 0;
+    }
+    .b1 p {
+        font-size: 15px;
+        width: 239px;
+        line-height: 27px;
+        margin-left: 14px;
+    }
+    .liine {
+        right: 48px;
+        bottom: -98px;
+        transform: rotate(20deg);
+    }
+    .wid {
+        width: 295px;
+    }
+    .tnx-man {
+        top: 1134px;
+        left: auto;
+        right: -66px;
+        width: 460px;
+    }
+    .face, .tg, .vk {
+        width: 260px;
+        height: 65px;
+    }
+    .block3 {
+        width: 350px;
+        height: 330px;
+    }
+    .tnx-name {
+        bottom: auto;
+        left: auto;
+        right: 26px;
+        top: 1553px;
+    }
+    
     .man {
-        top: 271px;
+        top: 253px;
         right: -11px;
         width: 350px;
         left: auto;
     }
     .name {
-        top: 614px;
+        top: 569px;
         left: auto;
         right: 29px;
     }
@@ -675,7 +1042,7 @@
         left: -29px;
     }
     h1 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 700;
         margin-top: 45px;
         line-height: 53px;
@@ -706,13 +1073,13 @@
         justify-content: center;
         align-items: center;
         padding: 0;
-        width: 330px;
+        width: 100%;
     }
     .block {
         width: 350px;
         box-shadow: 0 30px 60px rgb(0 0 0 / 4%);
         background-color: #fff;
-        height: 760px;
+        height: 710px;
         position: relative;
     }
     .block::before {
@@ -720,7 +1087,7 @@
         z-index: 2;
         position: absolute;
         width: 340px;
-        height: 750px;
+        height: 700px;
         border: 1px solid #000000;
         opacity: 0.04;
         top: 5px;
@@ -784,19 +1151,52 @@
         margin-bottom: 30px;
     }
     .on_air h4 {
-        font-size: 22px;
+        font-size: 16px;
         line-height: 27px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
     .on_air, .feedback, .you_now {
         overflow: hidden;
     }
     .right-form label {
-        font-size: 13px;
+        font-size: 12px;
         color: #1e1d1b;
         opacity: 0.6;
         line-height: 20px;
         text-transform: uppercase;
+    }
+    .form-check label {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #aaacb3!important;
+        position: relative;
+        padding-left: 24px;
+        text-transform: initial;
+        margin-left: 0;
+    }
+    .modal_m .block {
+        height: 740px;
+    }
+    .modal_m .block::before {
+        height: 730px;
+    }
+    .header .button_s {
+        margin-left: 0;
+        margin: 0 auto;
+        left: auto;
+        right: 0;
+        text-align: center;
+    }
+    .header .button_s .button, .inside .button_s .button {
+        width: 340px;
+    }
+    .modal-body .cooperation-form {
+        padding: 0;
+        width: 390px;
+    }
+    .cooperation-form .form-check label {
+        margin-left: 0;
     }
 }
 

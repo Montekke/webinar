@@ -77,7 +77,7 @@ h1 span  {
     height: 106px;
     box-shadow: 0 25px 50px rgba(251, 187, 0, 0.15), inset 0 3px 10px rgba(255, 255, 255, 0.7), inset 0 0 20px 1px rgba(255, 255, 255, 0.15);
     border-radius: 53px;
-    background-color: #ffc827;
+    background-color: #ffc827 !important;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -429,4 +429,198 @@ p {
 .liine {
     right: 284px;
     bottom: -34px;
+}
+.modal-body .container-form h2 {
+    margin-top: 60px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.modal-body .container-form p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.modal-body .container-form p span {
+    font-weight: 700;
+}
+.modal-body input {
+    width: 400px;
+    height: 96px;
+    border-radius: 48px;
+    border: 1px solid #10182024;
+}
+.modal-body .cooperation-form input {
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+.modal-body .cooperation-form {
+    padding: 0 55px;
+    width: 500px;
+}
+.modal-body .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.modal-body .block {
+    width: 510px;
+    box-shadow: 0 30px 60px rgb(0 0 0 / 4%);
+    background-color: #fff;
+    height: 855px;
+    position: relative;
+}
+.modal-body .accept input {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+.btn:hover {
+    background-image: linear-gradient(0deg, #ffd429 0%, #fecf27 100%);
+    transition: 0.4s;
+    color: #1e1d1b;
+    border: none;
+}
+.btn:active,
+.btn:focus {
+    color: #000;
+    box-shadow: none;
+    background-image: linear-gradient(0deg, #ffe346 0%, #fede44 100%);
+}
+.btn:focus {
+    outline: none !important;
+    background-image: linear-gradient(0deg, #ffe346 0%, #fede44 100%);
+}
+.btn {
+    border:none ;
+}
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+.close {
+    position: absolute;
+    right: -47px;
+    opacity: 1;
+}
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+.modal-body .accept {
+    margin-top: 27px;
+    padding-left: 0;
+}
+.vid1 {
+    margin-top: 23px;
+}
+.result .vid1 img {
+    margin-right: 10px;
+}
+.form-check {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: 20px;
+    justify-content: center;
+}
+.form-check input {
+    display: none;
+    width: auto!important;
+    height: auto!important;
+}
+.form-check label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #aaacb3!important;
+    position: relative;
+    padding-left: 24px;
+    text-transform: initial;
+}
+.form-check-label {
+    margin-bottom: 0;
+}
+.form-check label:before {
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgba(158,101,99,.2);
+    border-radius: 2px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.form-check label a {
+    color: #003cff !important;
+}
+.form-check label a {
+    text-decoration: underline!important;
+    color: #f1a473!important;
+    cursor: pointer;
+}
+.form-check label:after {
+    width: 10px;
+    height: 8px;
+    box-sizing: border-box;
+    background: url(../img/check2.svg) center center no-repeat;
+    background-size: contain;
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    opacity: 0;
+    transition: all .1s linear;
+}
+.form-check input:checked+label:after {
+    opacity: 1;
+    transition: all .1s linear;
+}
+.form-control:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    box-shadow: none;
+    border: 1px solid rgb(189 189 189);
+}
+.modal-dialog2 {
+    max-width: 840px;
+}
+.modal-content {
+    border: none;
+    border-radius: 11px;
+}
+.modal-body2 {
+    padding: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgb(17 36 72 / 7%);
+    border-radius: 8px;
+}
+.pl-5, .px-5 {
+    padding-left: 3rem!important;
+}
+.pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+.pr-5, .px-5 {
+    padding-right: 3rem!important;
+}
+.visible-xs {
+    display: none;
+}
+.visible-m {
+    display: none !important;
+}
+#cerror, #cerror2, #cerror3 {
+    display: none;
 }
